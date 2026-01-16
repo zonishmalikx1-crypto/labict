@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlushWear | Premium Clothing Brand</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Poppins', Arial, sans-serif; }
+    body { background: #ffffff; color: #333; line-height: 1.6; }
+
+    header {
+      background: #ffd6e8;
+      padding: 20px 50px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 { color: #c2185b; font-size: 28px; }
+
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: #c2185b;
+      font-weight: 600;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #ffe4f0, #ffffff);
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero h2 { font-size: 46px; color: #c2185b; }
+    .hero p { margin-top: 15px; font-size: 18px; max-width: 700px; margin-left: auto; margin-right: auto; }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 14px 34px;
+      background: #c2185b;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 15px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 70px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #c2185b;
+      margin-bottom: 50px;
+      font-size: 32px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 35px;
+    }
+
+    .product {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      padding: 22px;
+      text-align: center;
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 14px;
+      margin-bottom: 10px;
+    }
+
+    .product h4 { margin: 10px 0 5px; color: #c2185b; font-size: 18px; }
+    .product p { font-size: 14px; color: #555; }
+
+    .price { font-weight: bold; margin: 12px 0; font-size: 16px; }
+
+    .why-us {
+      background: #fff5fa;
+      padding: 80px 20px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .feature {
+      background: #fff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .about {
+      padding: 90px 20px;
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 900px;
+      margin: auto;
+      font-size: 16px;
+    }
+
+    .newsletter {
+      background: #ffe4f0;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .newsletter input {
+      max-width: 300px;
+      padding: 12px;
+      border-radius: 30px;
+      border: 1px solid #ccc;
+      margin-right: 10px;
+    }
+
+    .contact {
+      padding: 90px 20px;
+    }
+
+    form {
+      max-width: 550px;
+      margin: auto;
+      background: #fff;
+      padding: 35px;
+      border-radius: 18px;
+      box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+    }
+
+    input, textarea, button {
+      width: 100%;
+      padding: 14px;
+      margin-top: 12px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    button {
+      background: #c2185b;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      margin-top: 18px;
+    }
+
+    footer {
+      background: #c2185b;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>BlushWear</h1>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#why">Why Us</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h2>Redefining Modern Elegance</h2>
+  <p>BlushWear is a premium clothing brand designed for women who value comfort, elegance, and timeless fashion in every outfit.</p>
+  <a href="#shop" class="btn">Explore Collection</a>
+</section>
+
+<section class="container" id="shop">
+  <h3 class="section-title">Our Exclusive Collection</h3>
+  <div class="products">
+    <div class="product">
+      <img src="html.png" alt="Dress">
+      <h4>Blush Summer Dress</h4>
+      <p>Lightweight fabric with graceful stitching</p>
+      <div class="price">Rs. 4,500</div>
+      <a class="btn">Add to Cart</a>
+    </div>
+    <div class="product">
+      <img src="html1.png" alt="Top">
+      <h4>Silk Pink Top</h4>
+      <p>Perfect blend of luxury and comfort</p>
+      <div class="price">Rs. 2,800</div>
+      <a class="btn">Add to Cart</a>
+    </div>
+    <div class="product">
+      <img src="html2.png" alt="Suit">
+      <h4>Luxury 3-Piece Suit</h4>
+      <p>Designed for formal and festive wear</p>
+      <div class="price">Rs. 8,999</div>
+      <a class="btn">Add to Cart</a>
+    </div>
+    <div class="product">
+      <img src="imghtml.png" alt="Kurti">
+      <h4>Casual Blush Kurti</h4>
+      <p>Everyday elegance with soft tones</p>
+      <div class="price">Rs. 3,200</div>
+      <a class="btn">Add to Cart</a>
+    </div>
+  </div>
+</section>
+
+<section class="why-us" id="why">
+  <h3 class="section-title">Why Choose BlushWear</h3>
+  <div class="features">
+    <div class="feature"><h4>Premium Fabric</h4><p>Carefully selected materials ensuring comfort and durability.</p></div>
+    <div class="feature"><h4>Elegant Designs</h4><p>Minimal yet modern designs inspired by global trends.</p></div>
+    <div class="feature"><h4>Affordable Luxury</h4><p>Luxury fashion at prices made for everyone.</p></div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h3 class="section-title">About Our Brand</h3>
+  <p>BlushWear was founded with the vision of delivering high-quality fashion that empowers women. Our collections focus on subtle colors, premium fabrics, and refined tailoring to create outfits suitable for both everyday wear and special occasions.</p>
+</section>
+
+<section class="newsletter">
+  <h3 class="section-title">Join Our Newsletter</h3>
+  <p>Subscribe to receive updates on new arrivals and exclusive offers.</p>
+  <br />
+  <input type="email" placeholder="Enter your email" />
+  <a class="btn">Subscribe</a>
+</section>
+
+<section class="contact" id="contact">
+  <h3 class="section-title">Contact Us</h3>
+  <form onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea rows="4" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 BlushWear | Premium Baby Pink Clothing Brand</p>
+</footer>
+
+</body>
+</html>
